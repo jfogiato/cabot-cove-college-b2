@@ -1,0 +1,5 @@
+<h1> Courses with counts: </h1>
+
+<% @courses.each do |course| %>
+  <p> <%= course.name %>: <%= course.resident_count %> residents </p>
+<% end %>
