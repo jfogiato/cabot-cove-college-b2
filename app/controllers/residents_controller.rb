@@ -4,4 +4,9 @@ class ResidentsController < ApplicationController
     @residents = Resident.all
   end
 
+  def show
+    @resident = Resident.find(params[:id])
+    @courses = @resident.courses
+  end
+
 end

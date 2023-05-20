@@ -1,5 +1,5 @@
 <h1> All Residents </h1>
 
 <% @residents.each do |res| %>
-  <p>Name: <%= res.name %> Age: <%= res.age %>, Occupation: <%= res.occupation %></p>
+  <p>Name: <a href="/residents/<%= res.id %>"><%= res.name %></a> Age: <%= res.age %>, Occupation: <%= res.occupation %></p>
 <% end %>
