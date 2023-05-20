@@ -5,4 +5,8 @@ class Resident < ApplicationRecord
 
   has_many :resident_courses
   has_many :courses, through: :resident_courses
+
+  def self.resident_average_age
+    average(:age)
+  end
 end

@@ -3,3 +3,5 @@
 <% @residents.each do |res| %>
   <p>Name: <a href="/residents/<%= res.id %>"><%= res.name %></a> Age: <%= res.age %>, Occupation: <%= res.occupation %></p>
 <% end %>
+
+<p> Average resident age is: <%= @average_age %></p>
